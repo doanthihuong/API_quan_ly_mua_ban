@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table class="table table-striped">
+    <h3> Province List   </h3>
+    <thead>
+    <tr>
+        <th scope="col">id</th>
+        <th scope="col">description</th>
+        <th scope="col">name</th>
+    </tr>
+    </thead>
+    <body>
+    <th:forEach th:each="pro : ${product}">
+        <tr>
+            <td><span th:text="${pro.id}"></span></td>
+            <td><span th:text="${pro.name}"></span></td>
+            <td><span th:text="${pro.price}"></span></td>
+
+            <td>
+                <a th:href="@{/product/edit/__${pro.id}__}">Edit</a>
+                <a th:href="@{/product/delete/__${pro.id}__}">Delete</a>
+            </td>
+
+        </tr>
+    </th:forEach>
+    </body>
+</table>
+</body>
+</html>
