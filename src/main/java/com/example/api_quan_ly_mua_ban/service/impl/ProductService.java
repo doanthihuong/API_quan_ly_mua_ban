@@ -1,8 +1,7 @@
 package com.example.api_quan_ly_mua_ban.service.impl;
 
 import com.example.api_quan_ly_mua_ban.model.Product;
-import com.example.api_quan_ly_mua_ban.repository.OrderDetailRepository;
-import com.example.api_quan_ly_mua_ban.repository.OrdersRepository;
+
 import com.example.api_quan_ly_mua_ban.repository.ProductRepository;
 import com.example.api_quan_ly_mua_ban.service.IProductService;
 import org.springframework.beans.factory.annotation.Autowired;

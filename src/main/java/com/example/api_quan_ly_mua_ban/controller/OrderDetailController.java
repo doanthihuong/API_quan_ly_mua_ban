@@ -72,5 +72,4 @@ public class OrderDetailController {
         return new ResponseEntity<>(orders, HttpStatus.CREATED);
     }
 
-
 }
